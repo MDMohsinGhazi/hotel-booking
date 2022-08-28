@@ -1,5 +1,6 @@
 import { useGetPropertyTypeQuery } from "../../store/slice/hotel/hotelApiSlice";
 import Scrollbar from "../comman/Scrollbar";
+import Spinner from "../comman/Spinner";
 
 const PropertyList = () => {
   const { data: types, isLoading, isError, error } = useGetPropertyTypeQuery();
