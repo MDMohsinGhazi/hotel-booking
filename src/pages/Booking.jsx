@@ -14,7 +14,7 @@ const Booking = () => {
     );
   }
   if (isError) {
-    return <div className="h-screen">Somthing went wrong</div>;
+    return <div className="h-screen">Somthing went wronge</div>;
   }
   return (
     <main className="h-screen max-w-5xl mx-auto my-10">

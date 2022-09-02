@@ -14,13 +14,14 @@ const HorizontalCard = ({ hotel }) => {
     cheapestPrice,
   } = hotel;
   return (
-    <Link to={`/hotel/${_id}`} className="flex  shadow-md  border p-5">
+    <Link to={`/hotel/${_id}`} className="flex shadow-md border p-5 min-w-full">
       <img
-        className="h-48 aspect-square bg-cover object-center rounded-lg"
+        className="h-48 aspect-square bg-cover object-center rounded-md"
+        loading="lazy"
         src={image}
         alt="hotel"
       />
-      <div className="flex w-full justify-between px-5">
+      <div className="flex justify-between w-full p-5 space-x-10">
         <div>
           <h1 className="text-2xl font-semibold text-primary ">{name}</h1>
           <div className="flex space-x-5">

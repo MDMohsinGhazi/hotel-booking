@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply min-w-[1280px];
+  }
+
   input {
     @apply outline-none placeholder:font-light p-1 text-neutral-500 w-full;
   }

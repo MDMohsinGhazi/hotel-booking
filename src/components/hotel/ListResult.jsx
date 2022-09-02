@@ -10,11 +10,11 @@ const ListResult = ({ hotels, isLoading, isError, error }) => {
   }
 
   return (
-    <section className="flex flex-col w-full">
+    <section className="flex flex-col w-full ">
       <h1 className="text-3xl font-semibold pb-10 capitalize ">
-        Result: {hotels.length} properties found
+        Result: Match for your result
       </h1>
-      <div className="space-y-6">
+      <div className="space-y-6 min-w-full">
         {hotels.map((hotel) => (
           <HorizontalCard hotel={hotel} key={hotel._id} />
         ))}

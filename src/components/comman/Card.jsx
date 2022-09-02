@@ -20,6 +20,7 @@ const Card = ({ property }) => {
       <img
         className="aspect-video bg-cover rounded-t-md"
         src={process.env.PUBLIC_URL + `images/cities/${destination}.jpg`}
+        loading="lazy"
         alt="city"
       />
       <div className="p-2">
