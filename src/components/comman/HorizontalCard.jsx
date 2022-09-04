@@ -21,21 +21,20 @@ const HorizontalCard = ({ hotel }) => {
         src={image}
         alt="hotel"
       />
-      <div className="flex justify-between w-full p-5 space-x-10">
+      <div className="flex justify-between w-full p-5 space-x-12">
         <div>
           <h1 className="text-2xl font-semibold text-primary ">{name}</h1>
           <div className="flex space-x-5">
             <div className="text-primary underline underline-offset-1 font-semibold">
-              <span>{address}</span>, <span>{city}</span>
+              <span>{city}, </span>
+              <span>{distance}</span>
             </div>
-            <span>{distance}</span>
           </div>
-          <p>{title}</p>
-          <p>{desc}</p>
+          <p className="max-w-2xl ">{title}</p>
         </div>
-        <div className="space-y-5">
+        <div className="flex flex-col flex-shrink-0 ">
           <div className="text-lg font-semibold">very good</div>
-          <div className="text-primary text-xl font-semibold">
+          <div className="text-primary text-xl font-semibold ">
             {cheapestPrice} INR
           </div>
         </div>

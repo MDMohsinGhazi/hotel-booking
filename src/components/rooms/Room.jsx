@@ -17,9 +17,8 @@ const Room = ({ room, night, count, dates }) => {
     };
     try {
       const book = await bookRoom(data).unwrap();
-      if (isSuccess) {
-        navigate("/booking");
-      }
+
+      navigate("/booking");
     } catch (error) {
       alert(JSON.stringify(error));
     }
@@ -27,7 +26,7 @@ const Room = ({ room, night, count, dates }) => {
 
   return (
     <artical className="flex gap-5 bg-gray-100 rounded-lg ">
-      <img src={room.image} alt="img" className="h-48 w-48 rounded-l-lg" />
+      <img src={room.image} alt="img" className="h-48 w-56 rounded-l-lg" />
 
       <div className="py-5 pr-5  w-full space-y-1">
         <h1 className="text-xl text-primary font-semibold">{room.title}</h1>

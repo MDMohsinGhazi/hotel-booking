@@ -11,7 +11,7 @@ const List = () => {
   const { destination } = useSelector((state) => state.search);
   const [q, setQ] = useState({
     city: destination,
-    min: 1,
+    min: 0,
     max: 50000,
     limit: 10,
   });
@@ -33,7 +33,8 @@ const List = () => {
       {data.totalResults > 0 ? (
         <div className="w-full">
           <ListResult
-            hotels={data.hotels}
+            hotels={data?.hotels}
+            total={data?.totalResults}
             isLoading={isLoading}
             isError={isError}
             error={error}

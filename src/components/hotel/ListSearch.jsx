@@ -65,7 +65,8 @@ const ListSearch = ({ setQ }) => {
             type="range"
             min={0}
             max={500000}
-            step={10000}
+            step={1000}
+            defaultValue={500000}
             onChange={(evt) => {
               dispatch(setMaxPrice(evt.target.value));
             }}

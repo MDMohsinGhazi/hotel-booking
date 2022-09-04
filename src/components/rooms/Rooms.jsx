@@ -31,7 +31,7 @@ const Rooms = () => {
     );
   }
   return (
-    <section className="py-5 ">
+    <section className="py-5 space-y-5">
       {rooms.map((room) => (
         <Room
           key={room._id}

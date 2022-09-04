@@ -16,7 +16,6 @@ const Hotel = () => {
 
   const { data: hotel, isLoading, isError, error } = useGetHotelByIdQuery(id);
 
-  console.log(showModel);
 
   if (isLoading) {
     return (
@@ -49,7 +48,7 @@ const Hotel = () => {
           <p className="text-2xl font-semibold pt-10">{hotel.title}</p>
           <p>{hotel.desc}</p>
         </div>
-        <img src={hotel.image} alt="image" />
+        <img src={hotel.image} alt="image" className="min-w-full" />
       </section>
       <section className="flex flex-col justify-between items-end">
         <button className="bg-primary text-white px-6 py-2 font-semibold text-xl rounded-md shadow-md ">
